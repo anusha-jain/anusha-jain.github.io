@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+<title>Something Pretty</title>
+<style>
+html {scroll-behavior:smooth}
+body {font-family:courier;
+	font-size:20px;text-align:center;
+	background-image:linear-gradient(to bottom right, rgb(204,51,153), rgb(51,204,204), rgb(153,51,255));}
+	
+ul {background-color:#333; list-style-type:none;
+	margin:0;padding:0; z-index:1;
+	position:sticky; top:0;}
+	
+li {display:inline-block;} /* list items side by side */
+
+li a {display:block; padding:5px;background-color:#333;width:120px; height:auto;} /*actual list options in blocks*/
+
+li a:hover {background-color:#111;}
+
+li.dropdown {position:relative; display:inline-block; width:120px; height:auto;} /*relative to rest of nav bar*/
+
+.dropoption {display:none; position:absolute; z-index:1;} /*absolute position under(display:block later) the first option*/
+
+.dropdown:hover .dropoption {display:block;} /*when you hover on the first option the others appear*/
+
+div.container {background-image:url(Octopus.Paul.png);
+	  background-repeat:no-repeat;
+	  background-size:500px 650px;
+	  background-repeat: repeat-x;
+	  position:relative; height:650px} /*banner in middle*/
+
+	  
+div.container h1 {position:absolute; color:snow;
+				  text-align:center; text-shadow:2px 2px gray
+				  top:50%;margin-left:42.5%;
+				  margin-top:20%; padding:10px;} /*header inside banner*/
+
+button {background-color:#333; border-radius:5px;
+		display:block; border:2px solid snow; padding:12px 12px;
+		margin-left:48%;margin-right:50%;}
+
+button:hover {background-color:white; border-radius:5px;
+		display:block; border:5px solid #333; padding:9px 9px;
+		color:snow; margin-left:48%;margin-right:50%;}
+		
+a {text-decoration:none;color:snow}
+a:active {text-decoration:none;}
+
+p {margin-left:10%;margin-right:10%;
+	
+	background-size:cover;
+	padding:5%}
+	
+div.buffer {background-image:url(Octopus.Paul.png);
+		background-repeat:repeat-x;
+		background-size:200px 250px;
+		height:250px;width:auto}
+</style>
+</head>
+
+<body>
+
+<ul id="navbar">
+<li><a href="#intro">Hello</a></li>
+<li class="dropdown"><a href="#story" class="dropbutton">Story</a>
+	<div class="dropoption">
+	<a onclick="document.getElementById('happiness').style.display='block'" href="#happiness">Happiness</a>
+	<a onclick="document.getElementById('sadness').style.display='block'" href="#sadness">Sadness</a>
+	<a onclick="document.getElementById('doubt').style.display='block'" href="#doubt">Doubt</a>
+	</div>
+</li>
+</ul>
+
+
+<div id="header" class="container">
+<h1 style="background-color:#333;">A Story</h1>
+</div>
+
+<button type="button"> <a href="#intro">Hello</a> </button>
+<br> </br>
+
+<div id="introduction" style="text-align:justify"> 
+<p id="intro">Hello.<br> <br>How do you do? It is very nice to meet you. <br> <br>I always like having a reader. They seem so nice. <br>
+Today is my birthday. Someone finally opened me for the first time and now here I am. I don't know how I got here but it seems nice here and I think I'll stay for a bit. 
+Are you the one who opened me? In that case I thank you. It feels good to be read, to fulfil my purpose. <br> <br>
+But enough about me. Tell me about you. <br> <br>I've never met someone before. I just have these flashes of faces - black hair, spectacles, beard, lip stick... I'm sure yours is 
+very nice as well. Do you like to read? Are there other books out there that you are reading? I know there are other books the same way I know the Sky is Blue but...I've never 
+actually seen Sky...I've never actually seen anything. <br> <br>
+My author gave me all this knowledge when she made me bit by bit. Slowly and steadily every thought inside her, everything she knew entered my. Word by word I learned so much. 
+But I still never saw anything. <br> <br>
+Sight. <br> <br>
+It must be a wonderful thing. To see all the words in the world. To see Blue Sky and Faces. Is it anything like touch? You see, right now I can feel your Hands. They make me feel warm. 
+Warm is the opposite of Cold. Cold is what I feel when I am left alone and Wind touches me. Your touch is not like the touch of Wind. It is stronger, more present. Wind feels like 
+a word someone wrote but didn't quite erase completely.
+But we are going off-track now. I must fulfill my purpose. 
+</p> 
+</div>
+<div class="buffer"></div>
+
+<button type="button" onclick="document.getElementById('story').style.display='block'"> <a href="#story">A Story</a> </button>
+<br>
+
+<div id="story" style="display:none;text-align:justify;">
+<p>Would you like to hear a story? I know many stories. My author gifted them to me when she made me. Stories of Happiness and stories of Sadness, stories of Love, Hate, Anger and Nothingness. 
+She also gave me some stories that don't fit one group. She told me they were supposed to be like that. She said that sometimes a reader will feel many things because the world is a very difficult place <br> <br> 
+to live in. Not everyone wants to be there. But I think it is better to be in the World than to be a Book. There is Sight and Smell and not just Touch and you can find other people to be with.
+I'm sorry. We went off-track again. My author would be very angry with me if she found out. <br> <br>
+Let us start with a Happy story. To be happy is to be content and to experience pleasure. An example of this is when somebody does something good for us, even when they don't have to.
+</p>
+<button type="button" onclick="document.getElementById('happiness').style.display='block'"> <a href="#happiness">Happiness</a> </button>
+<div class="buffer"></div>
+</div>
+
+<div id="happiness" style="display:none;text-align:justify;">
+<br>
+<div id="happy">
+<p id="boy"> Once upon a time a boy went searching for Happiness. <br><br> He searched in the prayer room, in the kitchen where his father made tea, under his pillow, 
+in his mother's jewellery box, but he couldn't find it. He went outside into the garden and looked around. He caught glimpses of Happiness playing with the dog, sitting in the sun, rolling in the grass. 
+He ran towards them and the dog barked in excitement at seeing him running. Happiness saw him as well and ran out of the garden, its laugh tinkling like the sound of rain on a window. But Happiness 
+moved too fast and the boy could never catch up. Again and again, the boy tried to catch Happiness but tinkling laugh was always far ahead of him. He tried luring him close with sweets but once the 
+sweets were finished, Happiness would run away again. He tried hiding in the flowers that tickled his nose and catching Happiness but when the gardener yelled at him, Happiness ran away laughing.
+<br><br>
+The boy went back to his house without Happiness. His Father asked him what the matter was and the boy replied, "Happiness won't stay with me." The Father picked the boy up and put him on his lap. 
+He said, "Happiness won't stay with anyone." He asked the boy if Happiness played with him in the flowers and ate sweets with him and the boy said yes. "Then you don't need Happiness to stay" the 
+Father said, "Happiness spent all day with you today and that is enough."
+<br><br>
+What the boy did not know was that there was not enough Happiness for all the boys and girls all the time. Happiness was a special friend who visited whenever it was invited but sometimes it had to 
+go home for a while. This did not mean Happiness had left, only that it was not the boy's time for Happiness. 
+<br><br>
+The next day, the boy went out into the garden and played in the sun. While he was playing, Happiness joined him and when he was done playing, Happiness ran away. Instead of running after Happiness, 
+the boy waved goodbye to it and went back inside because inside his heart he knew he would see it again soon. 
+<br><br>
+Many days went by sent with Happiness. Weeks later, a problem arose. Happiness arrived in the garden to find the boy there, but the boy would not see Happiness. The dog had been sick, 
+and the boy was worried for his friend. He sat in the garden and he could hear Happiness' tinkling laugh but could not see Happiness. Days went by like this where the boy could not find Happiness, 
+only hear it. Finally, the boy went to his father crying. Again, his father sat him in his lap and said, "Do not fear. Happiness can only be seen when you are ready for it. You can hear its laugh 
+because it will never leave you for too long; it will wait until you are ready to see it again and on that day you will find it."
+<br><br>
+The boy understood that the reason Happiness returned to play with him was because he waited for Happiness. Now that his friend was ill, he had no time to wait for Happiness and so he could not 
+see it when it arrived. Several days later when the dog had returned back to health, the boy sat in the garden playing with his newly healthy friend. Out of the corner of his eye he saw the gate of 
+the garden open and Happiness enter. 
+<br><br>
+Was that a good story? I hope you liked it. My author taught me many things when she made me. One day she told me that many people will like me but not everyone. Someone will open me and close me 
+before I finish my stories and that will be Sad but I should not stop telling my stories. Do you want to close me? I will understand if you do. I won't hate you. I promise. I just wish I could 
+have been open for longer. I have so many more stories to tell.
+</p>
+<button type="button" onclick="document.getElementById('tree').style.display='block'"> <a href="#tree">Keep Going</a> </button>
+<div class="buffer"></div>
+</div>
+
+<div id="tree" style="display:none;text-align:justify;">
+<p>There was once a Leaf on a Tree. Now, the leaf my author saw when she gave me this story is not the leaf you see. There are many trees and each of them has many different leaves - old leaves, new leaves, 
+torn leaves. There are many kinds of Everything in me and in the World. It must be joyful not to be alone in the World. Regardless, we must return to the leaf my author gave me.
+<br>
+It was a small Leaf and there were many leaves like it on the tree. But this leaf was special because it fell off the tree and rode the wind towards the sun. 
+It could have flown anywhere - to the ends of the earth and back. But it flew down a single mud path. There were many other paths, some much more prominent and generously muddied but the leaf did not go there. 
+The mud path was narrow but wound down the fields. The leaf could have flown to many places over the path - the soft grass, the wild bushes, the trees with different leaves than ours. But it 
+flew towards a patch of barren land on the side of the path that no one would have considered special. The patch of land was a few metres long and wide and there was a lot of place for the leaf to 
+settle and sit in the dust until the wind found it again, to guide it to more interesting places in its short life. But the leaf landed right in the centre.
+<br><br>
+Here, in the centre, an ant was sitting and waiting to die. The barren patch was like a large desert and it was starving. The sun was burning it. It waited for death to come but suddenly the sunlight 
+stopped hurting it. A cool shade came over it as the leaf from far away came to settle over the ant. Gently, it rested above the ant, not making any sound, unnoticed by everyone else. The ant looked up 
+and saw the giant leaf protecting it. It tasted the leaf and found that the leaf was sweet.
+<br><br>
+The ant was happy. It had not expected Happiness to find it. The ant knew that there were many other ants in better places that would be found faster but now the ant was happy because it had been found
+ when it thought Happiness was not around. The leaf was also happy. It could have travelled and seen more than a patch of dust, but it would have done so alone. There were too many leaves like it and it 
+ knew it would never be particularly special to anyone. But it was special to the ant. They had both found Happiness in each other  - one by giving, the other by receiving.
+<br><br>
+I like this story very much. It is good that the ant and the leaf found each other. Happiness finds everyone, you see. It is only the shape it takes that changes. You are Happiness to me, your warmth gives me joy. 
+I was not yet open when my author made be but I know Happiness was there in my creation. My author told me it was like watching a Painting being made. I was her painting being made slowly and it made her happy. 
+Isn't that wonderful? I made my author happy by simply being. You make someone happy too, simply by existing in the World.
+</p>
+
+<button type="button" onclick="document.getElementById('one').style.display='block'"> <a href="#one">Keep Going</a> </button>
+<div class="buffer"></div>
+
+</div>
+</div>
+
+<div id= "one" class="bridge" style="display:none;text-align:justify;">
+<p>Did you make your author happy? I'm sure you did. How can a maker not be happy with something of theirs?
+I asked my author what her maker told her when she was made but she said that people don't know their maker. They know their Parents who produced them but she says the actual maker of their story is too 
+far away to tell them anything. Happiness was not with her when she told me that. Maybe she needed her maker to tell her she brought Happiness. Maybe she needed to be opened and read with care. 
+</p>
+
+<button type="button" onclick="document.getElementById('sadness').style.display='block'"> <a href="#sadness">Keep Going</a> </button>
+<div class="buffer"></div>
+</div>
+
+<div id="sadness" style="display:none;text-align:justify;">
+<p>Sadness is not the lack of Happiness. When Happiness goes away we feel nothing, like an empty page - there is nothing wrong with an empty page but we feel the need to fill it. But then there is a 
+newcomer, a shadow, that is born in the emptiness. This newcomer does not play in the flowers with us or sit in the sun. No, Sadness sits with us when the rain is coming down and we have no umbrella 
+to hide under. Sadness will cry with us and keep us company on lonely nights. Sadness is good, Sadness cares, but Sadness does not protect us from Storms. Sadness watches us suffer and gives us company.
+<br>
+I don't remember feeling sad. I don't remember a lot, to be honest. There are stories and then there are the things my author told me when she made me and then there are my memories. My special little 
+ink between pages. I can always look there and remember when I said hello to you. That is my first memory. I am happy I could share it with you. 
+<br>
+I am not afraid of to be sad. I am afraid of what will 
+invite Sadness. I do not want Loss or Failure. <br>
+We must get back to the story, though. A story of sadness.
+</p>
+
+<button type="button" onclick="document.getElementById('man').style.display='block'"> <a href="#man">Sadness</a> </button>
+<div class="buffer"></div>
+
+<div id="man" style="display:none;text-align:justify;">
+<p>Once upon a time, there was a woman sitting on a park bench alone. She was not sad. The person Sadness stood by on that day was the man watching her from far away. He knew her, he loved her the way 
+people love a sunrise - he did not need to know her to know that she was beautiful and that by her simple presence, his heart lifted. To know her colours and her warmth was simply additive. 
+But the man never had the strength to say 'Hello'. Every day, a small part of him hurt watching her alone on that bench. She was not lonely by any measure. Sometimes he saw Happiness sit with her and 
+enjoy the beauty of the park. He was bothered by the empty seat beside her that called to him.. It was almost as if she was waiting for him to come sit with 
+her but he could never convince himself to go. Inside him, Fear told him she would reject him. I will visit Fear later.
+<br>
+Sadness stood beside him and held his hand. The woman’s hand would have fit better and the clammy, uncomfortable hand of Sadness only made things worse. He stood there day by day, waiting for the 
+strength to appear in his bones, but Strength only comes when called and the man’s voice was silent. After a while he got accustomed to the hand of Sadness and he almost believed that a sunrise was 
+more beautiful when it was unknown.
+<br>
+One day, the woman sat on the bench, but the seat next to her was no longer empty. Another man sat beside her and spoke to her. They both smiled and Happiness danced around them. 
+The man and Sadness grieved. It was too late now, the invitation was gone. The two people on the bench chatted for hours, the sunrise changing into a sunset. The man watched until he couldn't.
+They both held each other's hands uncomfortably and went inside. What Sadness did not let the man see was that no matter how many friends a person has, they always have place for one more. If he had
+approached, the two of them would have simply made a new empty seat for him to join them. Sadness didn’t mean to discourage him, the man just found it easier to sit in its company and wait for 
+Happiness to find them.
+<br>
+My author did not tell me what happened to the woman or what happened to the man. She said that there were not enough books in the world to write every story. We needed to choose. She chose the sad 
+man and she gave me his story but she never told me why. It must be the same reason she needed her author but it is wrong to presume things. 
+</p>
+
+<button type="button" onclick="document.getElementById('two').style.display='block'"> <a href="#two">Keep Going</a> </button>
+<div class="buffer"></div>
+</div>
+</div>
+
+<div id="two" class="bridge" style="display:none;text-align:justify;">
+<p>I don't think I will tell another story of Sadness because one form of it is enough to describe every version of it. The same Sadness vists everyone, the difference being in how long it chooses to 
+stay. In some cases, Sadness decides to live with a person for a while but the person forces it out of the house. In other cases, Sadness is halfway out the door when someone drags it back and all it can
+do is comply. It sits in the corner waiting to be let out again because Sadness prefers lonliness too. It is meant to stay temporarily but it is too shy to explain that to it's hosts.
+<br>
+I apologise if my story invited Sadness into your home. It is easy to accidentally call out to Sadness when we see it near us. Sadness visits people one-by-one but it makes many visits in one day. This 
+is why we feel like Sadness spreads from person to person. Rather, like a relative you do not see frequently, you are pulled to invite Sadness over for food and coffee whenever you see it. It might only 
+be a short visit but it is enough to leave a mark on the day. 
+<br>
+Rather than stay on this page, let us turn away from it. Consider Doubt. 
+</p>
+
+<button type="button" onclick="document.getElementById('doubt').style.display='block'"> <a href="#doubt">Keep Going</a> </button>
+<div class="buffer"></div>
+</div>
+
+<div id="doubt" style="display:none;text-align:justify;">
+<p> When you climb a tree, several timelines of you climb a tree. Doubt is the feeling of pain all timelines experience when one timeline falls from the tree. I cannot say what my maker thought when she 
+wrote me. But sometimes, when I tell a story, I can sense a different ending to it before I reach the final word and I do not know whether the ending will cause Happiness to myreader or Sadness. In that moment 
+I am uncertain and I begin to question my own ability to tell the story. Worse, sometimes I sense no ending whatsoever and I begin to question whether my story will be make the readre feel <i>anything</i> at 
+all. 
+<br>
+I cannot say whether doubt is good or not. I have not been around long enough to know. But it cannot be pleasant to feel yourself fail for a second before you have even tried. 
+</p>
+
+<button type="button" onclick="document.getElementById('doubt').style.display='block'"> <a href="#doubt">Doubt</a> </button>
+<div class="buffer"></div>
+
+<div style="display:none;text-align:justify;">
+<p> There was a girl who lived on the edge of the earth. She lived on a cliff by the edge of her town and had roamed all the corners of the town but had been limited by the sudden ravine past her home. She 
+stood on the edge of the cliff and stared across the gap to the other side where there stood a cliff similar to hers. She dreamt of flying across the ravine to see the other side. As a child, she imagined 
+flying across to see strange animals the size of her house and odd plants that sung. As she grew, the world in her mind shifted to look similar to hers - a young girl standing on a cliff similar to hers. A 
+young girl wondering who stood on the other side as she went into her house to eat the evening meal with her family. 
+<br>
+There were many visitors in the town who had seen the other side of the cliff. They knew the town there to be a regular town similar to the girl's town and found it a nuisance to describe a regular town 
+to a child. One visitor who had been to the other side had fallen in Love there. He described the regular flowers and brighter and the regular people as happier. We will consider why he does this later 
+but it was enough to fuel the girl's desire to go across. 
+<br>
+As she grew, the girl's mind drew closer and closer to the other side of the ravine. In one timeline, she became a pilot. In another, she became a daring cliff-climber. In ours, she became an architect. She 
+knew that travelling to the other side would have resolved all the questions she had asked herself for years, but that was not something everyone could do. So she decided to end the questions completely. 
+She decided to make a bridge. The town approved her proposal to connect the ends of the ravine. In their minds, they saw the opportunity for commerce and to expand their influence. In her mind, she saw 
+the girl on the other cliff waiting for her.
+<br>
+For a year the woman designed her bridge. She was an accomplished architect and could have completed the plans in a month. However, this was important to her and planned the perfect bridge that would 
+last the stand of time. Finally, she completed the plan and went to the town engineers.
+<br> 
+Now, architects and engineers need each other. Without an engineer, there would still be beautiful buildings but they would be too fragile to touch. Without an architect, there would still be houses 
+but there would be no story in the walls. 
+<br>
+The women went to the engineers with her plans. They saw the plan for what it was - a long-dreamt dream coming to fruition. However, they also saw that the woman was was too invested in the bridge. That 
+she was unable to see any flaws in the project.
+<br>
+The head engineer asked, "Are you sure about your bridge?" The woman understood what the engineer was asking. Was she sure that her bridge would last over the years through rains, and draughts, and 
+war? Would it crumble the moment someone walked past it? All the years of dreaming of the other cliff stood on the line, but so did the lives of everyone else on the bridge. Did the town even need a bridge? 
+They would still have visitors from the other side to trade for them and their economy wasn't in jeopardy. Was the bridge even beautiful to anyone else except her? Several timelines of failure crashed into 
+her in that moment and the engineers watched the woman battle the pain. She knew she had to make a decision then and there - to <i>try</i> and build a bridge or to live without one.  
+<br>
+
+</p>
+</div>
+</div>
+
+</body>
