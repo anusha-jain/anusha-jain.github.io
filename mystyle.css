@@ -9,7 +9,7 @@ ul {background-color:#333; list-style-type:none;
 	
 li {display:inline-block;} /* list items side by side */
 
-li a {display:block; padding:5px;background-color:#333;width:120px; height:auto;} /*actual list options in blocks*/
+li a {display:block; padding:0 ;background-color:#333;width:120px; height:auto;} /*actual list options in blocks*/
 
 li a:hover {background-color:#111;}
 
